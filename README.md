@@ -47,6 +47,9 @@ ruby list_keys.rb
 You should get something like:
 
 ```
-User                 Key    Created
-brian.henderson      T2SQ   2017-08-10 21:45:01 UTC
+User                      Key    Created
+brian.henderson           T2SQ   2017-08-10 21:45:01 UTC
+john.doe                  YDIQ   2017-08-16 18:57:11 UTC
+reallylongusername54      7RIQ   2017-08-16 18:57:11 UTC
+user1                     ZBUQ   2017-08-16 18:57:10 UTC
 ```
