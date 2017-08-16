@@ -5,6 +5,7 @@
 You will need:
 
  - AWS Keys in the default location (~/.aws/credentials on Linux and Mac)
+ - IAM Permissions to read IAM Users and Keys
 
 Just write the ini file
 
@@ -22,7 +23,7 @@ sudo pip install awscli
 aws configure
 ```
 
-Using VirtualEnv would probably have been better. AWS Linux has it already installed I think, so you could just assign an IAM Role and run the script.
+Using VirtualEnv would probably have been better. You could also use an instance with an IAM Role and run the script.
 
 ## Ruby
 
