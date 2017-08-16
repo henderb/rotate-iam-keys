@@ -32,16 +32,16 @@ Install ruby, bundler, and the aws-sdk gem listed in the Gemfile.
 ```
 sudo yum install ruby-devel
 gem install bundler
+git clone https://github.com/henderb/rotate-iam-keys
 cd rotate-iam-keys
 bundle
 ```
 
 # Run It
 
-Run the script with Ruby
+Run the script with Ruby from the root of the git repo once all dependencies have been installed.
 
 ```
-cd rotate-iam-keys
 ruby list_keys.rb
 ```
 
