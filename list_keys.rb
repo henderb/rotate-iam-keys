@@ -18,7 +18,9 @@ users = iam.list_users.users
 users.each do |user|
   keys = iam.list_access_keys({user_name: user.user_name})
   keys.each do |key|
-    meta = key.access_key_metadata.first
-    printf format, meta.user_name, meta.access_key_id[-4,4], meta.create_date
+    metadata_list = key.access_key_metadata
+    metadata_list.each do |meta|
+      printf format, meta.user_name, meta.access_key_id[-4,4], meta.create_date
+    end
   end
 end
